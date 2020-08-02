@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap Insta Feed</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-light justify-content-between">
+		<a class="navbar-brand"><i class="fab fa-instagram"></i> Instagram</a>
+		<form class="form-inline">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  Create a new post
+</button>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel"></h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+						</div>
+						<div class="modal-body">
+							<textarea class="form-control" id="message-text"></textarea>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-primary">Publish</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</div>
+		</form>
+	</nav>
+
+	<div class="d-flex justify-content-center">
+		<nav class="navbar navbar-light bg-light">
+			<div class="btn-group" role="group" aria-label="Buttons">
+				<a href="./index.html" class="btn btn-secondary">
+					<i class="fas fa-th"></i></a>
+				<a href="./index2.html" class="btn btn-secondary"><i class="fas fa-square fa-x"></i></a>
+			</div>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="post">
+			<div class="post-header">
+				<div>
+					<h2>First Photo</h2>
+				</div>
+				<div>
+					<span>12/14</span>
+				</div>
+			</div>
+			<div>
+				<img src="https://picsum.photos/400/200"></img>
+			</div>
+			<div>
+				<p>This is my fisrt photo of the feed.</p>
+			</div>
+		</div>
+
+		<div class="post">
+			<div class="post-header">
+				<div>
+					<h2>Second Photo</h2>
+				</div>
+				<div>
+					<span>12/14</span>
+				</div>
+			</div>
+			<div>
+				<img src="http://lorempixel.com/400/200"></img>
+			</div>
+			<div>
+				<p>This is my fisrt photo of the feed.</p>
+			</div>
+		</div>
+
+		<div class="post">
+			<div class="post-header">
+				<div>
+					<h2>Third Photo</h2>
+				</div>
+				<div>
+					<span>12/14</span>
+				</div>
+			</div>
+			<div>
+				<img src="http://lorempixel.com/output/nature-q-c-400-200-3.jpg"></img>
+			</div>
+			<div>
+				<p>This is my fisrt photo of the feed.</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+
+</body>
+
+</html>
